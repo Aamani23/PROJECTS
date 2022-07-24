@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html><head><title>REGISTRATION FORM</title>
+</head>
+<body>
+    <form id="myform" action="login.js" method="get">
+    <h1><b>REGISTRATION FORM</b></h1>
+    <label>USER NAME:</label>
+    <input type="text" placeholder="Enter your name" maxlength="15" pattern="[A-Za-z]+" required autofocus/><br><br>
+    <label>PASSWORD:</label>
+    <input type="password" placeholder="Enter your password" minlength="8" maxlength="12" pattern="[0-9].[A-Za-Z0-9]+.[0-9]" required /><br><br>
+    <label>Email:</label>
+    <input type="email" pattern="[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+" />
+    <br><br>
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="male"/>
+    <label>Male</label>
+    <input type="radio" name="gender" value="female"/>
+    <label>Female</label>
+    <input type="radio" name="gender" value="other"/>
+    <label>Other</label>
+    <br><br>
+    <label>Age(Yrs):</label>
+    <input type="text" min="12" max="60"/><br><br>
+    <label>Address:</label>
+    <textarea rows="4" cols="20" maxlength="100"></textarea><br><br>
+    <label>Company website:</label>
+    <input type="url" pattern="“((http|https)://)(www.)?” 
+    + “[a-zA-Z0-9@:%._\\+~#?&//=]{2,256}\\.[a-z]” 
+    + “{2,6}\\b([-a-zA-Z0-9@:%._\\+~#?&//=]*)”" /><br><br>
+    <label for="countries">Choose country:</label>
+    <select name="countries" id="countries"><option value="India">India</option>
+    <option value="United States">United States</option>
+<option value="Germany">Germany</option>
+<option value="Japan">Japan</option></select>
+<br><br>
+<label>Date of Journey:</label>
+<input type="date" /><br><br>
+<input type="submit" value="Submit"/>
+<input type="reset" value="Reset"/></form>
+</body>
+</html>
